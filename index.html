@@ -2,24 +2,33 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
     <header id="header">
-        <img src="logo.png" alt="store logo" id="header=img">
+        <img src="logo.png" alt="https://www.clipartmax.com/png/middle/243-2433403_business-logos-free-50-free-psd-company-logo-designs-logo.png" id="header-img">
         <nav id="nav-bar">
-            <a href="" class="nav-link">Who</a>
-            <a href="" class="nav-link">What</a>
-            <a href="" class="nav-link">Why</a>
+            <a href="#who" class="nav-link">Who</a>
+            <a href="#what" class="nav-link">What</a>
+            <a href="#why" class="nav-link">Why</a>
         </nav>
     </header>
     <body>
-        <a href="" id="video"></a>
-        <form>
-            <input type="email" id="email" placeholder="jon.smith@email.com">
-            <input type="submit" value="https://www.freecodecamp.com/email-support">
-        </form>
+        <div id="who" class="intro-video">
+            <video id="video" width="320" height="240" controls>
+                <source src="intro.mp4" type="video/mp4">
+                <source src="intro.ogg" type="video/ogg">
+            </video>
+        </div>
+        <div id="what" class="news-letter-cta">
+            <p>To learn more about what we do please subscribe to our newsletter!</p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" id="email" name="email" placeholder="jon.smith@email.com">
+                <input type="submit" id="submit">
+            </form>
+        </div>
     </body>
+    <footer id="why">
+        <p>Why we exist & Why we do what we do</p>
+    </footer>
 </html>
